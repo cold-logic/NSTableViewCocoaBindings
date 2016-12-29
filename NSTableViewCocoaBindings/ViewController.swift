@@ -55,6 +55,19 @@ class ViewController: NSViewController {
         // Update the view, if already loaded.
         }
     }
+    
+    // Reference to array controller
+    @IBOutlet var arrayController: NSArrayController!
+    
+    @IBAction func swapData(_ sender: Any) {
+        // Replace the array controller content with a new array
+        arrayController.content = [
+            Person.init(firstName: "Alpha", lastName: "Zenon"),
+            Person.init(firstName: "Xeno", lastName: "Bert")
+        ]
+        // Interesting output...
+        // NSLog("%@", [table.infoForBinding("content")])
+    }
 
 
 }
