@@ -2,9 +2,13 @@
 
 A little project I put together to document how to use an NSTableView with swift, cocoa bindings and storyboards on macOS
 
-## Bindings
+## Cocoa Bindings
 
-In `Main.storyboard`:
+Open `Main.storyboard`:
+
+Open Xcode's Bindings Inspector (looks like a little maze icon in the right toolbar pane)
+
+These bindings should be established:
 
 The *Array Controller* has it's "Content" binding bound to *View Controller* with the model key path set to "peopleArray". This is the NSArray defined in `ViewController.swift`.
 
