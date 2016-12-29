@@ -6,8 +6,8 @@ A little project I put together to document how to use an NSTableView with swift
 
 In `Main.storyboard`:
 
-The *Array Controller* has it's "content" binding bound to *View Controller* with the model key path set to "peopleArray". This is the NSArray defined in `ViewController.swift`.
+The *Array Controller* has it's "Content" binding bound to *View Controller* with the model key path set to "peopleArray". This is the NSArray defined in `ViewController.swift`.
 
-The *Table* has it's "content" binding bound to the *Array Controller* with a controller key of "arrangedObjects"
+The *Table* has it's "Content" binding bound to the *Array Controller* with a controller key of "arrangedObjects"
 
 Lastly each of the *Table View Cells* have their "Value" bindings bound to *Table Cell View* with a model key path of "objectValue.firstName" and "objectValue.lastName" respectively.
